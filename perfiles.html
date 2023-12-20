@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Perfil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo CSS -->
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>A- Z</h1>
+        </div>
+    </header>
+    <div class="container">
+        <h1>¿Quién está viendo ahora?</h1>
+        <div class="profiles">
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/better-call-saul-final-explicado-1660719283.jpg"
+                        alt="">
+                </div>
+                <span>Manuel</span>
+            </div>
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/better-call-saul-final-explicado-1660719283.jpg"
+                        alt="">
+                </div>
+                <span>Victor</span>
+            </div>
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/better-call-saul-final-explicado-1660719283.jpg"
+                        alt="">
+                </div>
+                <span>Gelves</span>
+            </div>
+
+            <!-- Repite estos divs para cada perfil -->
+        </div>
+        <div class="div-editar-perfil">
+            <button id="cerrarPanel" onclick="ocultarAdminProfile()">x</button>
+            <ul>
+                <li>
+                    <button class="panelPerfil">Manuel</button>
+                </li>
+                <li>
+                    <button class="panelPerfil">Victor</button>
+                </li>
+                <li>
+                    <button class="panelPerfil">Gelves</button>
+                </li>
+            </ul>
+            <div class="editar-perfil">
+                <strong>imagen</strong>
+                <input type="file" name="" id="file-img">
+                <br>
+                <h3>Nombre del perfil</h3>
+                <input id="name-perfil" type="text" src="" alt="" placeholder="Nombre de tu perfil">
+                <br>
+                <h3>Tipo de perfil</h3>
+                <select name="" id="">
+                    <option value="">Adolescente</option>
+                    <option value="">Adulto</option>
+                    <option value="">Niño</option>
+                    <option value="">Bebé</option>
+                    <option value="">Anciano</option>
+                </select>
+                <br>
+                <br>
+                <button id="guardarPerfil">Guardar</button>
+            </div>
+        </div>
+        <div class="manage-profiles">
+            <button id="adminProfile" onclick="abrirAdminProfile()">
+                Administrar Perfiles
+            </button>
+        </div>
+        <script src="main.js"></script>
+
+    </div>
+</body>
+
+</html>

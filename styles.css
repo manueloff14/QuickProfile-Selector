@@ -1,0 +1,212 @@
+body {
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #141414;
+    background: #141414;
+    /* Fallback para navegadores que no soportan gradientes */
+    background: linear-gradient(135deg,
+            #3498db,
+            #85c1e9,
+            #1a73bc,
+            #2e58cc,
+            #3498db,
+            #85c1e9,
+            #1abcbc);
+    background-size: 700% 700%;
+    /* Tamaño del fondo */
+    animation: gradientAnimation 20s ease infinite;
+    /* Animación del fondo */
+    color: #fff;
+}
+
+/* Animación para el fondo degradado desordenado */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
+.container {
+    text-align: center;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.profile {
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    width: 150px;
+}
+
+.profile:hover {
+    transform: scale(1.05);
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile span {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#adminProfile {
+    border: none;
+    font-family: 'Fredoka', sans-serif;
+    background-color: rgb(59, 59, 59);
+    box-shadow: 0px 0px 10px rgb(24, 24, 24);
+    color: #fff;
+    width: 230px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+    transition: 0.1s ease-in-out;
+    /* Añade un efecto de desenfoque al fondo */
+}
+
+#adminProfile:hover {
+    box-shadow: 0px 0px 0px rgb(24, 24, 24);
+    background-color: rgb(48, 48, 48);
+    transition: 0.1s ease-in-out;
+}
+
+header {
+    color: white;
+    padding: 0px;
+    text-align: center;
+}
+
+.logo {
+    position: fixed;
+    top: 0px;
+    left: 30px;
+    padding: 5px;
+    background-color: rgb(59, 59, 59);
+    border-end-end-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: rgb(197, 197, 197);
+}
+
+.div-editar-perfil {
+    background-color: rgb(204, 56, 56);
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centra verticalmente */
+    align-items: center;
+    /* Centra horizontalmente */
+}
+
+#cerrarPanel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(54, 48, 48);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 30em;
+}
+
+.div-editar-perfil ul {
+    list-style: none;
+    padding: 0;
+    margin: 6px;
+    display: flex;
+    flex-direction: row;
+    /* Alinea los elementos de manera horizontal */
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten al ancho del contenedor */
+}
+
+.div-editar-perfil li {
+    margin: 2px;
+}
+
+
+.panelPerfil {
+    background-color: #222222;
+    color: white;
+    font-family: 'Fredoka';
+    margin-bottom: 0px;
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+}
+
+.editar-perfil {
+    margin-top: 40px;
+}
+
+#file-img {
+    background-color: #1e3061;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+#name-perfil {
+    padding: 10px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+}
+
+#guardarPerfil {
+    padding: 10px;
+    width: 160px;
+    border-radius: 50px;
+    border: none;
+}
